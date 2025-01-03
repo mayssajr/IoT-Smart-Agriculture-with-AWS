@@ -3,7 +3,7 @@ import time
 import paho.mqtt.client as mqtt
 import json
 import ssl
-from datetime import datetime  # Importer datetime pour le timestamp
+from datetime import datetime 
 
 # SPI Initialization
 spi = spidev.SpiDev()
