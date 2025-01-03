@@ -14,7 +14,7 @@ class FirmaApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.green,
           accentColor: Colors.orange,
-        ).copyWith(secondary: Colors.orange), // Define the secondary color here
+        ).copyWith(secondary: Colors.orange), 
         textTheme: const TextTheme(
           headlineLarge: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold),
           bodyLarge: TextStyle(color: Colors.black87, fontSize: 16),
