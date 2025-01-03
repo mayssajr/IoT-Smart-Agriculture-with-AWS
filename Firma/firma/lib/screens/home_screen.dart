@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     try {
       print('Connecting to MQTT broker...');
-      await client.connect().timeout(Duration(seconds: 10)); // Ajoutez un délai
+      await client.connect().timeout(Duration(seconds: 10)); 
       if (client.connectionStatus!.state == MqttConnectionState.connected) {
         print('Connected to MQTT broker!');
         subscribeToTopic('sensor/data');
@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       }
     } catch (e) {
       print('MQTT connection error: $e');
-      Future.delayed(Duration(seconds: 5), connectMQTT); // Reconnectez automatiquement
+      Future.delayed(Duration(seconds: 5), connectMQTT); 
     }
   }
 
