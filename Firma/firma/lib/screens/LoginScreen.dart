@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(builder: (context) => HomeScreen()),
       );
     } else {
-      // Show error message
+      
       setState(() {
         _errorMessage = 'Invalid username or password';
       });
@@ -40,11 +40,11 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Background gradient with white and light green shading effect
+          
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.white, Color(0xFF4CAF50)], // Lighter green shade
+                colors: [Colors.white, Color(0xFF4CAF50)], 
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
@@ -58,10 +58,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.circular(15),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF4CAF50).withOpacity(0.5), // Lighter green shadow
+                    color: const Color(0xFF4CAF50).withOpacity(0.5), 
                     spreadRadius: 5,
                     blurRadius: 15,
-                    offset: const Offset(0, 3), // Shadow position
+                    offset: const Offset(0, 3), 
                   ),
                 ],
               ),
@@ -98,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ElevatedButton(
                     onPressed: _login,
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.white, backgroundColor: const Color(0xFF4CAF50), // Text color
+                      foregroundColor: Colors.white, backgroundColor: const Color(0xFF4CAF50), 
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
