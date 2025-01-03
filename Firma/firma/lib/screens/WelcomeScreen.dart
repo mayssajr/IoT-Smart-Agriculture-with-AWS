@@ -7,11 +7,11 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Background gradient with white and light green shading effect
+
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.white, Color(0xFF4CAF50)], // Lighter green shade
+                colors: [Colors.white, Color(0xFF4CAF50)], 
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
@@ -21,19 +21,19 @@ class WelcomeScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo image
+               
                 Image.asset(
                   'assets/images/logo1.png',
-                  height: 150, // Set the height for the logo
+                  height: 150, 
                 ),
                 const SizedBox(height: 20),
-                // Welcome message
+               
                 const Text(
                   'Welcome to Firma',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF4CAF50), // Lighter green color for the text
+                    color: Color(0xFF4CAF50), 
                   ),
                 ),
                 const SizedBox(height: 40),
@@ -47,7 +47,7 @@ class WelcomeScreen extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: const Color(0xFF4CAF50), // Text color
+                    foregroundColor: Colors.white, backgroundColor: const Color(0xFF4CAF50), 
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
